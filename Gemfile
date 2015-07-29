@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.2.1'
+#ruby=ruby-2.2.1@rails4.2
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
