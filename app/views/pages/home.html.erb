@@ -6,16 +6,16 @@
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 		<div class="well">
 			<h2 class="text-center">Basic Membership</h2>
-			<h4>Sign up for free for basic access to the community</h4>
-			<%= link_to 'Sign up free', new_user_registration_path, class: 'btn btn-primary btn-lg btn-block' %>
+			<h4>Basic access to the community</h4>
+			<%= link_to 'Sign up free', new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
 		</div>
 		
 	</div>
 	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 		<div class="well">
 			<h2 class="text-center">Pro Membership</h2>
-			<h4>Sign up for the Pro account $10/month and get full access</h4>
-			<%= link_to 'Sign up Pro Account', new_user_registration_path, class: 'btn btn-primary btn-lg btn-block' %>
+			<h4>Pro account $10/month and get full access</h4>
+			<%= link_to 'Sign up Pro Account', new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
 		</div>	
 	</div>
 </div>
