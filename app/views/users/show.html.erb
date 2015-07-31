@@ -1,6 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xs- col-sm- col-md- col-lg-">
+			<%= image_tag @user.profile.avatar.url %>
 			<h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
 
 			<!--checks for paid subscription to show exclusive content -->
