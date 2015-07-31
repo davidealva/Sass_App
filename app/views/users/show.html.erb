@@ -1,1 +1,18 @@
-<%= @user %>
+<div class="container">
+	<div class="row">
+		<div class="col-xs- col-sm- col-md- col-lg-">
+			<h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
+
+			<!--checks for paid subscription to show exclusive content -->
+			<% if current_user.plan_id == 2 %>
+				<p><%= @user.profile.phone_number  %></p>	
+				<p><%= @user.profile.contact_email  %></p>	
+			<% end %>
+			<p><%= @user.profile.title  %></p>	
+			<p><%= @user.profile.description  %></p>	
+		</div>
+	</div>
+</div>
+
+
+
